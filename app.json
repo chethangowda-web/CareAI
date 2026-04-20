@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "CareAI",
+    "slug": "careai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A73E8"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.careai.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "CareAI uses your location to find nearby doctors and hospitals.",
+        "NSMicrophoneUsageDescription": "CareAI uses the microphone to record your voice for symptom input.",
+        "NSFaceIDUsageDescription": "CareAI uses Face ID to securely authenticate you."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1A73E8"
+      },
+      "package": "com.careai.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "RECORD_AUDIO",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-location",
+      "expo-av",
+      "expo-secure-store",
+      "expo-local-authentication"
+    ]
+  }
+}
