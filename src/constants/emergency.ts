@@ -1,0 +1,11 @@
+export const EMERGENCY_NUMBERS = {
+  INDIA: {
+    NATIONAL_EMERGENCY: '112',
+    AMBULANCE: '108',
+    MEDICAL_HELPLINE: '104',
+    PREGNANT_WOMEN: '102',
+  },
+  US: {
+    NATIONAL_EMERGENCY: '911',
+  }
+};
